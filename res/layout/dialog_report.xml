@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/report_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" >
+
+        <RadioButton
+            android:id="@+id/report_abuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/report_abuse" />
+
+        <RadioButton
+            android:id="@+id/report_fake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/report_fake" />
+
+        <RadioButton
+            android:id="@+id/report_inappropriate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/report_inappropriate" />
+
+        <RadioButton
+            android:id="@+id/report_spam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/report_spam" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/report_rl"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" >
+
+	    <Button
+	        android:id="@+id/report_cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="false"
+	        android:layout_centerVertical="true"
+	        android:text="@string/teenslane_cancel" />
+
+	    <Button
+	        android:id="@+id/report_confirm"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="false"
+	        android:layout_centerVertical="true"
+	        android:text="@string/teenslane_confirm" />
+
+	</RelativeLayout>
+</RelativeLayout>

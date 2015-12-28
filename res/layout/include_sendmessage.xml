@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sendmessage"
+    android:layout_width="fill_parent"
+    android:background="#2b2c30"
+    android:orientation="vertical"    
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <Button
+        android:id="@+id/buy_credit_block"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/css_button"
+        android:minHeight="45dp"
+        android:text="@string/credits_buy_more"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/write_message_block"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+       <EditText
+            android:id="@+id/sendmessage_text"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@+id/sendmessage_button"
+            android:background="@drawable/sendmessage_input_text"
+            android:hint="@string/sendmessage_input_hint"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/sendmessage_button"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/css_button_send"
+            android:text="@string/sendmessage_input_button"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/credits_block"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#2b2c30"
+        android:clickable="true"
+        android:duplicateParentState="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/icon_credits"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_credits" />
+
+        <TextView
+            android:id="@+id/text_costs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon_credits"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:text="Cost 10 credits"
+            android:textColor="#dddddd"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/text_credit_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:gravity="center|left"
+            android:paddingLeft="5dp"
+            android:text="1570 credits"
+            android:textColor="#dddddd"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

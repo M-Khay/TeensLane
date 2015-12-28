@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyfeedActivity" >
+
+    <RelativeLayout
+        android:id="@+id/users_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/header_user" />
+        
+        <ScrollView
+	        android:id="@+id/scroll_view"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@+id/header"
+	        android:background="#dee0e4" >
+	        
+	        <LinearLayout
+	            android:id="@+id/linear_layout_holder"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <Button
+		            android:id="@+id/status_update"
+	                android:layout_width="fill_parent"
+	                android:layout_height="40dp"
+	                android:layout_marginBottom="3dp"
+					android:drawableLeft="@drawable/icon_update_status"
+    				android:drawablePadding="10dip"
+	                android:background="@drawable/css_inline_input"
+	                android:gravity="center_vertical"
+	                android:paddingLeft="10dp"
+	                android:text="@string/feed_update_status">	                
+	            </Button>
+	            
+		        <LinearLayout
+		            android:id="@+id/linear_layout"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical" >
+		        </LinearLayout>
+		        
+	        </LinearLayout>
+	        
+	    </ScrollView>
+		
+    </RelativeLayout>
+
+</RelativeLayout>

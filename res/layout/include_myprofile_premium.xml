@@ -1,0 +1,329 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myprofile_gallery_content"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#dee0e4"
+    android:visibility="visible" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/message_thread_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/premium_credits"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/buy_credit_block"
+                android:layout_marginRight="-25dp"
+                android:layout_toLeftOf="@+id/buy_credit_block"
+                android:text="@string/premium_youhave"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#646566" />
+
+            <Button
+                android:id="@+id/buy_credit_block"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_thread_date"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:layout_marginTop="5dp"
+                android:text="Button"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/credits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignTop="@+id/buy_credit_block"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@+id/buy_credit_block"
+                android:text="@string/credits"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#e6004c"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/buy_credits_buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buy_credit_block"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/buy_credits_100"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_background_black"
+                    android:text="@string/premium_buycredits_100"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buy_credits_500"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_background_blue" 
+                    android:text="@string/premium_buycredits_500"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buy_credits_1000"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_background_yellow"
+                    android:text="@string/premium_buycredits_10000"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/buy_credits_buttons"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/activate_premium_feature"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/buy_credits_buttons"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/activate_premium_feature"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/premium_features_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextView01"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/premium_feature_feed_viewed_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/buy_premium_feature_feed_viewed"
+                        android:text="@string/premium_feature_feed_viewed"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/premium_feature_feed_viewed_text_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/premium_feature_feed_viewed_text"
+                        android:layout_toLeftOf="@+id/buy_premium_feature_feed_viewed"
+                        android:text="@string/premium_feature_feed_viewed_month"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+                    
+                    <TextView
+                        android:id="@+id/premium_feature_feed_viewed_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/premium_feature_feed_viewed_text_cost"
+                        android:text="@string/premium_feature_status"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#848588" />
+
+                    <TextView
+                        android:id="@+id/premium_feature_feed_viewed_status_text_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/premium_feature_feed_viewed_text_cost"
+                        android:layout_toRightOf="@+id/premium_feature_feed_viewed_status_text"
+                        android:paddingLeft="5dp"
+                        android:text="Inactive"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#848588" />
+
+                    <Button
+                        android:id="@+id/buy_premium_feature_feed_viewed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true" 
+                        android:layout_marginLeft="5dp"  
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"                                 
+                        android:background="@drawable/button_background_black"
+                        android:text="@string/premium_feature_buy"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/premium_feature_pets_added_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/buy_premium_feature_pets_added"
+                        android:text="@string/premium_feature_pets_added"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/premium_feature_pets_added_text_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/premium_feature_pets_added_text"
+                        android:layout_toLeftOf="@+id/buy_premium_feature_pets_added"
+                        android:text="@string/premium_feature_pets_added_month"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+                    
+                    <TextView
+                        android:id="@+id/premium_feature_pets_added_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/premium_feature_pets_added_text_cost"
+                        android:text="@string/premium_feature_status"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#848588" />
+
+                    <TextView
+                        android:id="@+id/premium_feature_pets_added_status_text_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/premium_feature_pets_added_text_cost"
+                        android:layout_toRightOf="@+id/premium_feature_pets_added_status_text"
+                        android:paddingLeft="5dp"
+                        android:text="Inactive"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#848588" />
+
+                    <Button
+                        android:id="@+id/buy_premium_feature_pets_added"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="5dp"        
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"                        
+                        android:background="@drawable/button_background_black"
+                        android:text="@string/premium_feature_buy"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp" >
+
+                    <TextView
+                        android:id="@+id/premium_feature_pets_removed_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/buy_premium_feature_pets_removed"
+                        android:text="@string/premium_feature_pets_removed"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/premium_feature_pets_removed_text_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/premium_feature_pets_removed_text"
+                        android:layout_toLeftOf="@+id/buy_premium_feature_pets_removed"
+                        android:text="@string/premium_feature_pets_removed_month"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#000000" />
+                    
+                    <TextView
+                        android:id="@+id/premium_feature_pets_removed_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/premium_feature_pets_removed_text_cost"
+                        android:text="@string/premium_feature_status"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#848588" />
+
+                    <TextView
+                        android:id="@+id/premium_feature_pets_removed_status_text_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/premium_feature_pets_removed_text_cost"
+                        android:layout_toRightOf="@+id/premium_feature_pets_removed_status_text"
+                        android:paddingLeft="5dp"
+                        android:text="Inactive"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#848588" />
+
+                    <Button
+                        android:id="@+id/buy_premium_feature_pets_removed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="5dp"        
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"                        
+                        android:background="@drawable/button_background_black"
+                        android:text="@string/premium_feature_buy"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

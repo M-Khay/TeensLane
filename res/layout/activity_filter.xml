@@ -1,0 +1,328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myprofile_about_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:visibility="visible"
+    tools:context=".FilterActivity" >
+
+    <RelativeLayout
+        android:id="@+id/users_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/header_user" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/users_header" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="00dp"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/filter_lookingfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_lookingfor"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#090a0b"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/filter_lookingfor_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_lookingfor_input"
+                android:textColor="#707171"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/search_boys"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/boys" />
+
+                <ImageView
+                    android:id="@+id/search_girls"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/girls" />
+
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/filter_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_age"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#090a0b"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/filter_age_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_age_input"
+                android:textColor="#707171"
+                android:textSize="16sp"
+                android:visibility="gone" />
+            
+            <TextView
+                android:id="@+id/filter_choose_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_dist_country"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#090a0b"
+                android:textSize="16sp"
+                android:visibility="gone" />
+            
+            <RelativeLayout
+                android:id="@+id/filter_destination_view"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input" >
+		
+                <TextView
+	                android:id="@+id/filter_distance_heading"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:paddingLeft="10dp"
+	                android:text="@string/filter_distance"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#707171"
+	                android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/filter_distance_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/filter_distance_heading"
+                    android:layout_alignBottom="@+id/filter_distance_heading"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/filter_distance"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#707171"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/filter_distance_heading"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" >
+	                
+	                <SeekBar
+	                    android:id="@+id/distance_meter"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+                
+		    </RelativeLayout>
+            
+            <Button
+                android:id="@+id/filter_country_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_distance_mylocation"
+                android:textColor="#707171"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/filter_state_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_distance_state"
+                android:textColor="#707171"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/filter_city_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_distance_city"
+                android:textColor="#707171"
+                android:textSize="16sp" />
+            
+            <TextView
+                android:id="@+id/filter_loves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_loves_pets_photo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#090a0b"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/filter_loves_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:minHeight="40dp"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_loves_input"
+                android:textColor="#707171"
+                android:textSize="16sp"
+                android:visibility="gone" />
+                      
+            <Button
+                android:id="@+id/filter_photo_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/input"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_photo_input"
+                android:textColor="#707171"
+                android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/filter_photo_input_radio"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-38dp" />
+            
+            <Button
+                android:id="@+id/filter_pets_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input"
+                android:gravity="center|left"
+                android:minHeight="40dp"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_pets_input"
+                android:textColor="#707171"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/filter_pets_input_radio"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-38dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/filter_looks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_looks"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#090a0b"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/filter_looks_body_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_looks_body"
+                android:textColor="#707171"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/filter_looks_ethnicity_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/filter_looks_ethnicity"
+                android:textColor="#707171"
+                android:textSize="16sp" />
+            
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

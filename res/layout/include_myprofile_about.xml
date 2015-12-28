@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myprofile_about_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dee0e4"
+    android:visibility="visible" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/myprofile_aboutme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/myprofile_about_me"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#090a0b"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/myprofile_aboutme_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input"
+                android:gravity="left"
+                android:hint="@string/myprofile_about_me_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text|textMultiLine"
+                android:maxWidth="300dp"
+                android:minLines="3"
+                android:padding="10dp"
+                android:textColor="#707171"
+                android:textSize="16sp" />
+            
+            <TextView
+                android:id="@+id/myprofile_ilove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/myprofile_what_ilove"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#090a0b"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/myprofile_ilove_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:minHeight="40dp"
+                android:paddingLeft="10dp"
+                android:text="@string/myprofile_what_ilove_hint"
+                android:textColor="#707171"
+                android:textSize="16sp"
+                android:visibility="gone" />
+            
+            <TextView
+                android:id="@+id/myprofile_looks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/myprofile_looks"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#090a0b"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/myprofile_looks_body_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/myprofile_looks_body_hint"
+                android:textColor="#707171"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/myprofile_looks_ethnicity_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/myprofile_looks_ethnicity_hint"
+                android:textColor="#707171"
+                android:textSize="16sp" />
+            
+            <Button
+                android:id="@+id/myprofile_looks_height_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/myprofile_looks_height_hint"
+                android:textColor="#707171"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/myprofile_looks_weight_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/myprofile_looks_weight_hint"
+                android:textColor="#707171"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/myprofile_looks_eyes_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/myprofile_looks_eyes_hint"
+                android:textColor="#707171"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/myprofile_looks_hair_input"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_drop"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="@string/myprofile_looks_hair_hint"
+                android:textColor="#707171"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

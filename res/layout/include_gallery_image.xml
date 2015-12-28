@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gallery_image"
+    android:layout_width="110dp"
+    android:layout_height="110dp"
+    android:background="#dee0e4"
+    android:visibility="invisible" >
+    
+	<ImageView
+	    android:id="@+id/gallery_image_src"
+	    android:layout_width="100dp"
+	    android:layout_height="100dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerInParent="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="5dp"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/intro_create_profile" />
+	
+	<ImageView
+	    android:id="@+id/gallery_image"
+	    android:layout_width="105dp"
+	    android:layout_height="105dp"
+	    android:layout_alignTop="@+id/gallery_picker"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/myprofile_gallery_image_overlay" />
+
+	<ProgressBar
+	    android:id="@+id/gallery_loading"
+	    style="?android:attr/progressBarStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true" />
+
+	<ImageView
+	    android:id="@+id/gallery_image_lock"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:layout_alignRight="@+id/gallery_image_src"
+	    android:layout_alignTop="@+id/gallery_image_src"
+	    android:src="@drawable/myprofile_gallery_lock"
+	    android:visibility="invisible" />
+
+</RelativeLayout>

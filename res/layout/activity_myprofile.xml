@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23252a"
+    tools:context=".MyprofileActivity" >
+        
+    <RelativeLayout
+        android:id="@+id/myprofile_rl_intro"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/myprofile_rl_header"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false" >
+
+        <ImageView
+            android:id="@+id/cover_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:alpha="0.7"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/update_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Profile Image"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/update_cover_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Cover Image"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        
+	   <ImageView
+	       android:id="@+id/pickphoto"
+	       android:layout_width="150dp"
+	       android:layout_height="150dp"
+	       android:layout_alignParentLeft="false"
+	       android:layout_alignParentRight="false"
+	       android:layout_alignParentTop="true"
+	       android:layout_centerHorizontal="true"
+	       android:layout_centerVertical="false"
+	       android:layout_marginTop="10dp"
+	       android:clickable="true"
+	       android:scaleType="centerCrop"
+	       android:src="@drawable/css_myprofile_pickphoto" />
+
+	   <ImageView
+	       android:id="@+id/imageView1"
+	       android:layout_width="155dp"
+	       android:layout_height="155dp"
+	       android:layout_alignParentTop="true"
+	       android:layout_centerHorizontal="true"
+	       android:layout_centerInParent="false"
+	       android:layout_marginTop="7dp"
+	       android:src="@drawable/photo_matte" />
+	
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myprofile_rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/header_user" />
+    </RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/myprofile_rl_navigation"
+	    android:layout_width="wrap_content"
+	    android:layout_height="90dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignWithParentIfMissing="false"
+	    android:layout_centerHorizontal="false"
+	    android:layout_centerVertical="false" >
+
+        <include
+            android:id="@+id/navigation_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            layout="@layout/detail_footer" />
+    </RelativeLayout>
+    
+	<RelativeLayout
+	    android:id="@+id/myprofile_rl_rolled"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/myprofile_rl_header"
+	    android:layout_centerHorizontal="false"
+	    android:visibility="invisible" >
+
+		<include
+            android:id="@+id/myprofile_settings_content"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/navigation_top"
+            layout="@layout/include_myprofile_settings" 
+            android:visibility="gone"/>
+		
+		<include
+            android:id="@+id/myprofile_about_content"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/navigation_top"
+            layout="@layout/include_myprofile_about" 
+            android:visibility="gone"/>
+		
+		<include
+            android:id="@+id/myprofile_gallery_content"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/navigation_top"
+            layout="@layout/include_myprofile_gallery" 
+            android:visibility="gone"/>
+		
+		<include
+            android:id="@+id/myprofile_premium_content"
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/navigation_top"
+            layout="@layout/include_myprofile_premium" 
+            android:visibility="gone"/>
+		
+		<include
+            android:id="@+id/navigation_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/detail_footer" />
+        
+    </RelativeLayout>
+
+	<ImageView
+	    android:id="@+id/helper_arrow"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/myprofile_rl_navigation"
+	    android:layout_centerHorizontal="false"
+	    android:layout_marginBottom="5dp"
+	    android:paddingRight="240dp"
+	    android:src="@drawable/helper_arrow" />
+
+</RelativeLayout>

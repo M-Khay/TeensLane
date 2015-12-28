@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_image"
+    android:layout_width="110dp"
+    android:layout_height="150dp"
+    android:background="#dee0e4"
+    android:visibility="visible" >
+    
+	<ImageView
+	    android:id="@+id/user_image_src"
+	    android:layout_width="100dp"
+	    android:layout_height="100dp"
+	    android:layout_alignTop="@+id/gallery_image"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="2dp"
+	    android:maxHeight="100dp"
+	    android:maxWidth="100dp"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/intro_create_profile" />
+	
+	<ImageView
+	    android:id="@+id/gallery_image"
+	    android:layout_width="105dp"
+	    android:layout_height="105dp"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/myprofile_gallery_image_overlay" />
+
+	<ProgressBar
+	    android:id="@+id/gallery_loading"
+	    style="?android:attr/progressBarStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/gallery_image"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="45dp" />
+
+	<TextView
+	    android:id="@+id/user_nickname"
+	    android:layout_width="105dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/gallery_image"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="false"
+	    android:layout_marginTop="5dp"
+	    android:gravity="center"
+	    android:lines="1"
+	    android:maxLines="1"
+	    android:maxWidth="110dp"
+	    android:text="Small Text"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="#686868" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content" >
+
+    <RadioGroup
+        android:id="@+id/body_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" >
+
+        <RadioButton
+            android:id="@+id/body_sexy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:paddingLeft="60dp"
+            android:text="@string/body_sexy" />
+
+        <RadioButton
+            android:id="@+id/body_sporty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/body_sporty" />
+
+        <RadioButton
+            android:id="@+id/body_slender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/body_slender" />
+
+        <RadioButton
+            android:id="@+id/body_juicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/body_juicy" />
+
+        <RadioButton
+            android:id="@+id/body_muscle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/body_muscle" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/body_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/body_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/teenslane_confirm" />
+
+</RelativeLayout>

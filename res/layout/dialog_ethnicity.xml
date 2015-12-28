@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content" >
+
+    <RadioGroup
+        android:id="@+id/ethnicity_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" >
+
+        <RadioButton
+            android:id="@+id/ethnicity_asian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/ethnicity_asian" />
+        <RadioButton
+            android:id="@+id/ethnicity_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/ethnicity_black" />
+
+       	<RadioButton
+       	    android:id="@+id/ethnicity_other"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:paddingLeft="60dp"
+       	    android:text="@string/ethnicity_other" />
+
+        <RadioButton
+            android:id="@+id/ethnicity_latino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/ethnicity_latino" />
+        <RadioButton
+            android:id="@+id/ethnicity_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/ethnicity_white" />
+        
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/ethnicity_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ethnicity_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/teenslane_confirm" />
+
+</RelativeLayout>

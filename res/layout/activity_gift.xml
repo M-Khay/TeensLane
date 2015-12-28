@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#23252a"
+    tools:context=".GiftActivity" >
+
+    <RelativeLayout
+        android:id="@+id/users_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/header_user" />
+        
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/header"
+            android:background="#23252a" >
+	
+	        <LinearLayout
+	            android:id="@+id/linear_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="#23252a"
+	            android:orientation="vertical" >
+	            <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	                
+	                <Button
+	                    android:id="@+id/animal_piggy"
+	                    android:layout_width="90dp"
+	                    android:layout_height="90dp"
+	                    android:layout_alignParentLeft="true"
+	                    android:layout_centerHorizontal="false"
+	                    android:layout_centerVertical="true"
+	                    android:layout_margin="10dp"
+	                    android:background="@drawable/animal_piggy" />
+	                
+					<Button
+	                    android:id="@+id/animal_duck"
+	                    android:layout_width="90dp"
+	                    android:layout_height="90dp"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_centerInParent="true"
+	                    android:layout_centerVertical="true"
+	                    android:layout_margin="10dp"
+	                    android:background="@drawable/animal_duck" />
+	                
+	                <Button
+	                    android:id="@+id/animal_chick"
+	                    android:layout_width="90dp"
+	                    android:layout_height="90dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerHorizontal="false"
+	                    android:layout_centerVertical="true"
+	                    android:layout_margin="10dp"
+	                    android:background="@drawable/animal_chick" />
+	                
+	            </RelativeLayout>
+	            <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+
+	                <Button
+	                    android:id="@+id/animal_bad_piggy"
+	                    android:layout_width="90dp"
+	                    android:layout_height="90dp"
+	                    android:layout_centerHorizontal="false"
+	                    android:layout_alignParentLeft="true"
+	                    android:layout_centerVertical="true"
+	                    android:layout_margin="10dp"
+	                    android:background="@drawable/animal_bad_piggy" />
+	                
+					<Button
+	                    android:id="@+id/animal_teddy"
+	                    android:layout_width="90dp"
+	                    android:layout_height="90dp"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_centerInParent="true"
+	                    android:layout_centerVertical="true"
+	                    android:layout_margin="10dp"
+	                    android:background="@drawable/animal_teddy" />
+	                
+	                <Button
+	                    android:id="@+id/animal_bunny"
+	                    android:layout_width="90dp"
+	                    android:layout_height="90dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerHorizontal="false"
+	                    android:layout_centerVertical="true"
+	                    android:layout_margin="10dp"
+	                    android:background="@drawable/animal_bunny" />
+	                
+	            </RelativeLayout>
+	            <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+
+	                <Button
+	                    android:id="@+id/badge_man_bad"
+	                    android:layout_width="90dp"
+	                    android:layout_height="90dp"
+	                    android:layout_margin="10dp"
+	                    android:background="@drawable/badge_man_bad" />
+	                
+	                <Button
+	                    android:id="@+id/badge_woman_hot_body"
+	                    android:layout_width="90dp"
+	                    android:layout_height="90dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerHorizontal="false"
+	                    android:layout_centerVertical="true"
+	                    android:layout_margin="10dp"
+	                    android:background="@drawable/badge_woman_hot_body" />
+	                
+	            </RelativeLayout>
+	        </LinearLayout>	
+	        
+	    </ScrollView>
+		
+    </RelativeLayout>
+
+</RelativeLayout>

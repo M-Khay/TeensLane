@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForumDetailActivity" >
+
+    <RelativeLayout
+        android:id="@+id/users_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userprofile_message_content" >
+        
+        <include
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/header_user" />
+        
+	    <ScrollView
+	        android:id="@+id/scroll_view"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@+id/header"
+	        android:background="#dee0e4" >
+	
+	        <LinearLayout
+	            android:paddingTop="5dp"
+	            android:paddingBottom="5dp"
+	            android:id="@+id/linear_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	        </LinearLayout>
+	        
+	    </ScrollView>
+ 	</RelativeLayout>
+ 	
+    <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#2b2c30"
+	    android:layout_alignParentBottom="true"
+	    android:visibility="gone"
+	    android:id="@+id/userprofile_message_content" >
+    
+	    <include
+	        android:id="@+id/sendmessage"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_centerInParent="true"
+	        layout="@layout/include_sendmessage"
+	        android:background="#2b2c30" />
+	    
+    </RelativeLayout>
+
+</RelativeLayout>

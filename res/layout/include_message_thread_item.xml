@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_user"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#dee0e4"
+    android:paddingBottom="2dp"
+    android:paddingTop="0dp"
+    android:visibility="visible" >
+    
+    <RelativeLayout
+        android:id="@+id/message_from_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#dee0e4"
+        android:visibility="visible" >
+    
+	<ImageView
+	    android:id="@+id/user_image_src"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"
+	    android:layout_alignTop="@+id/gallery_image"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="2dp"
+	    android:maxHeight="100dp"
+	    android:maxWidth="100dp"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/intro_create_profile" />
+	
+	<ImageView
+	    android:id="@+id/gallery_image"
+	    android:layout_width="65dp"
+	    android:layout_height="65dp"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/myprofile_gallery_image_overlay" />
+
+	<ProgressBar
+	    android:id="@+id/gallery_loading"
+	    style="?android:attr/progressBarStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/gallery_image"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerInParent="false"
+	    android:layout_centerVertical="true"
+	    android:layout_marginTop="25dp" />
+	
+	</RelativeLayout>
+
+	<LinearLayout
+	    android:id="@+id/message_from_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    
+	    android:layout_marginBottom="0dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="2dp"
+	    	    
+	    android:layout_toRightOf="@+id/message_from_photo"
+	    android:background="@drawable/css_comment"
+	    android:orientation="vertical"
+	    
+	    android:paddingBottom="10dp"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="5dp"
+	    
+	    android:visibility="visible" >
+	    
+		<TextView
+		    android:id="@+id/message_thread_user"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Medium Text"
+		    android:textColor="#000000"
+		    android:textSize="15sp"
+			android:textAppearance="@android:style/TextAppearance.Medium"
+		    android:textStyle="bold" />
+		
+		<TextView
+		    android:id="@+id/message_body"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    		    
+            android:autoLink="web|email"
+            android:linksClickable="true" 
+                        
+		    android:layout_marginTop="1dp"
+	
+		    android:minWidth="150dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+			android:textAppearance="@android:style/TextAppearance.Medium"
+		    android:text="Hello" />
+		        
+		<TextView
+		    android:id="@+id/message_thread_date"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+
+		    android:layout_marginTop="1dp"
+	
+		    android:text="Small Text"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		    android:textSize="12sp" />
+
+	</LinearLayout>
+</RelativeLayout>

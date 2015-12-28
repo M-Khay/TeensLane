@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:layout_margin="10dp"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/gift_image"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/animal_bunny" />
+
+    <TextView
+        android:id="@+id/gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/gift_image"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/credits"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/gift_name"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="false"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/credits_fake"
+        android:src="@drawable/icon_credits" />
+
+    <ImageView
+        android:id="@+id/credits_fake"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/gift_name"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="false"
+        android:src="@drawable/icon_credits"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/gift_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gift_name"
+        android:layout_marginLeft="-18dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/credits"
+        android:text="150credits"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/gift_action"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/gift_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/css_button"
+        android:text="Button"
+        android:textColor="#570021"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

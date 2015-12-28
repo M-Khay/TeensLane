@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content" >
+
+    <RadioGroup
+        android:id="@+id/eyes_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp" >
+
+        <RadioButton
+            android:id="@+id/eyes_brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/eye_color_brown" />
+        <RadioButton
+            android:id="@+id/eyes_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/eye_color_gray" />
+		<RadioButton
+            android:id="@+id/eyes_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/eye_color_black" />
+		<RadioButton
+            android:id="@+id/eyes_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/eye_color_green" />
+		<RadioButton
+            android:id="@+id/eyes_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="@string/eye_color_blue" />
+		
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/eyes_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eyes_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/teenslane_confirm" />
+
+</RelativeLayout>

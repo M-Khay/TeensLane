@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp" >
+
+    <ImageView
+        android:id="@+id/teenslane_header_background"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/teenslane_header" />
+
+    <ImageView
+        android:id="@+id/teenslane_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/header_logo" />
+
+</RelativeLayout>

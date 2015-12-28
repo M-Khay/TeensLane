@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/users_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dee0e4"
+    tools:context=".MypetsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/users_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/header_user" />
+        
+        <ScrollView
+            android:id="@+id/scroll_view"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" 
+	        android:layout_below="@+id/header">
+	
+	        <LinearLayout
+	            android:id="@+id/linear_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            
+			</LinearLayout>
+		</ScrollView>
+		
+    </RelativeLayout>
+
+</RelativeLayout>

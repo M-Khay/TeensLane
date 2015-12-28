@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/loves_missionary"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/loves_missionary" />
+
+    <Button
+        android:id="@+id/loves_69"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/loves_missionary"
+        android:background="@drawable/loves_69" />
+
+    <Button
+        android:id="@+id/loves_doggie"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/loves_69"
+        android:background="@drawable/loves_doggie" />
+    
+    <Button
+        android:id="@+id/loves_bj"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/loves_doggie"
+        android:layout_margin="10dp"
+        android:background="@drawable/loves_bj" />
+
+    <Button
+        android:id="@+id/loves_piss"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loves_doggie"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/loves_bj"
+        android:background="@drawable/loves_piss" />
+
+    <Button
+        android:id="@+id/loves_sm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loves_doggie"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/loves_piss"
+        android:background="@drawable/loves_sm" />
+    
+    <Button
+        android:id="@+id/loves_orgy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/loves_bj"
+        android:layout_margin="10dp"
+        android:background="@drawable/loves_orgy" />
+
+    <Button
+        android:id="@+id/loves_fetish"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loves_bj"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/loves_orgy"
+        android:background="@drawable/loves_fetish" />
+
+    <Button
+        android:id="@+id/loves_hj"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loves_bj"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/loves_fetish"
+        android:background="@drawable/loves_hj" />
+
+    <Button
+        android:id="@+id/loves_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loves_hj"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/loves_hj"
+        android:text="@string/teenslane_confirm" />
+
+</RelativeLayout>
+	

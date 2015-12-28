@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="90dp" >
+
+    <ImageView
+        android:id="@+id/teenslane_header_background"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/teenslane_header" />
+
+    <ImageView
+        android:id="@+id/header_back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:src="@drawable/css_button_back" />
+
+    <ImageView
+        android:id="@+id/header_menu_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:src="@drawable/css_button_menu" />
+
+    <TextView
+        android:id="@+id/header_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/teenslane_header_background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="" 
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
